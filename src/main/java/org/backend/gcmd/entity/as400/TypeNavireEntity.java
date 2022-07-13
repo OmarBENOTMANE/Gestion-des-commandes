@@ -1,0 +1,22 @@
+package org.backend.gcmd.entity.as400;
+
+import lombok.*;
+
+import javax.persistence.*;
+
+@Builder
+@Getter
+@Setter
+@Table(name = "DTYNAV")
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity(name = "TypeNavireEntityAS400")
+public class TypeNavireEntity {
+    @Id
+    @Column(name = "TYPNV")
+    private String typeNavire;
+
+    @Column(name = "LIBTYPNV")
+    private String libelle17;
+
+}
